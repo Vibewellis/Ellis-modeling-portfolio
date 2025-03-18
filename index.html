@@ -39,11 +39,15 @@
         }
         .portfolio {
             padding: 40px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
         }
         .portfolio img {
-            width: 250px;
-            height: auto;
-            margin: 10px;
+            width: 250px; /* Same width */
+            height: 350px; /* Same height */
+            object-fit: cover; /* Ensures images scale properly */
             border-radius: 5px;
         }
     </style>
@@ -68,7 +72,6 @@
     <!-- Portfolio Section -->
     <div class="portfolio container">
         <h1>Portfolio</h1> <!-- Portfolio title same size as name -->
-        <img src="M6.jpg">
         <img src="M9.jpg">
         <img src="M23.jpg">
         <img src="M26.jpg">
