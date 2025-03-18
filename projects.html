@@ -29,10 +29,26 @@
             margin-bottom: 50px;
         }
         .project img {
-            width: 100%;
-            max-width: 700px;
             border-radius: 10px;
             margin-top: 10px;
+        }
+        /* M12 - Big Image */
+        .big-image {
+            width: 100%;
+            max-width: 700px;
+        }
+        /* Small Images Rows */
+        .small-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .small-images img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 5px;
         }
         /* Ellis Ibizugbe Button */
         .home-button {
@@ -57,22 +73,36 @@
     <!-- Tenable -->
     <div class="container project">
         <h1>TENABLE</h1>
-        <!-- Space for images -->
+        <img src="M12.jpg" class="big-image">
+        
+        <!-- First Row: M2, M10, M6 -->
+        <div class="small-images">
+            <img src="M2.jpg">
+            <img src="M10.jpg">
+            <img src="M6.jpg">
+        </div>
+
+        <!-- Second Row: M11, M7, M4 -->
+        <div class="small-images">
+            <img src="M11.jpg">
+            <img src="M7.jpg">
+            <img src="M4.jpg">
+        </div>
     </div>
 
-    <!-- Over-Suit -->
+    <!-- Over-Suit (Placeholder, Will Be Updated Next) -->
     <div class="container project">
         <h1>OVER-SUIT</h1>
         <!-- Space for images -->
     </div>
 
-    <!-- Africaye -->
+    <!-- Africaye (Placeholder, Will Be Updated Next) -->
     <div class="container project">
         <h1>AFRICAYE</h1>
         <!-- Space for images -->
     </div>
 
-    <!-- Track -->
+    <!-- Track (Placeholder, Will Be Updated Next) -->
     <div class="container project">
         <h1>TRACK</h1>
         <!-- Space for images -->
