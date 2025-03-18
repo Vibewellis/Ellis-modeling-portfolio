@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f8f5f2;
             text-align: center;
+            position: relative;
         }
         .container {
             width: 80%;
@@ -18,7 +19,7 @@
             padding: 20px;
         }
         h1, h2 {
-            font-size: 3em; /* Bigger font size */
+            font-size: 3em;
             color: #a38b68;
             text-transform: uppercase;
             font-weight: bold;
@@ -29,7 +30,7 @@
         }
         .hero img {
             width: 90%;
-            max-width: 700px; /* Largest image */
+            max-width: 700px;
             border-radius: 10px;
         }
         .bio {
@@ -45,10 +46,26 @@
             gap: 15px;
         }
         .portfolio img {
-            width: 250px; /* Same width */
-            height: 350px; /* Same height */
-            object-fit: cover; /* Ensures images scale properly */
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
             border-radius: 5px;
+        }
+        /* Projects Button */
+        .projects-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #a38b68;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .projects-button:hover {
+            background-color: #8a6f50;
         }
     </style>
 </head>
@@ -71,12 +88,15 @@
 
     <!-- Portfolio Section -->
     <div class="portfolio container">
-        <h1>Portfolio</h1> <!-- Portfolio title same size as name -->
+        <h1>Portfolio</h1>
         <img src="M9.jpg">
         <img src="M23.jpg">
         <img src="M26.jpg">
         <img src="M29.jpg">
     </div>
+
+    <!-- Projects Button -->
+    <a href="projects.html" target="_blank" class="projects-button">Projects</a>
 
 </body>
 </html>
